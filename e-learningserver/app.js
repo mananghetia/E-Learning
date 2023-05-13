@@ -45,6 +45,7 @@ app.use("/api/v1", payment)
 app.use("/api/v1", other)
 
 const path = require("path")
+const __dirname = path.resolve()
 app.use(express.static(path.join(__dirname, "../e-learning/build")))
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../e-learning/build/index.html"))
