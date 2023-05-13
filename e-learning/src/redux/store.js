@@ -22,5 +22,5 @@ const store = configureStore({
 
 export default store;
 
-export const server = 'http://localhost:4000/api/v1';
-// export const server = 'https://coursebundler.herokuapp.com/api/v1';
+// export const server = 'http://localhost:4000/api/v1';
+export const server = 'https://e-learning-2eqp.onrender.com/api/v1'
