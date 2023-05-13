@@ -1,0 +1,57 @@
+.container {
+    height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.vector-graphics {
+    filter: drop-shadow(0 40px 10px rgba(0, 0, 0, 0.3));
+    animation: vectorAnimation 1s infinite ease-out alternate;
+}
+
+@keyframes vectorAnimation {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.brandsBanner>svg {
+    color: white;
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+
+.brandsBanner>svg :hover {
+    color: rgb(255, 221, 0);
+}
+
+.container2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 video {
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    width: 60%;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media screen and (max-width:600px) {
+    .container2 video {
+        width: 100%;
+    }
+}
+
+.course {
+    width: 250px;
+    /* margin-bottom: 250px; */
+    transition: all 0.5s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
